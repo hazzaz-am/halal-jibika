@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&display=swap');
+
+header {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.header__logo .heading{
+    color: #232323;
+    font-size: 24px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar ul li {
+    cursor: pointer;
+    padding: 1rem;
+    transition: all .4s liner;
+}
+
+.navbar ul li a {
+    color: black;
+}
+
+.navbar ul li:hover {
+    background-color: #26AE61;
+    border-radius: 8px;
+}
+
+.navbar ul li:hover a{
+    color: white;
+}
+
+.header__profile {
+    display: flex;
+    gap: 10px;
+}
+
+.header__profile .profile {
+    background-color: transparent;
+}
+
+.header__profile .profile {
+    font-size: 16px;
+    color: black;
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.header__profile button  {
+    font-family: 'Fira Sans', sans-serif;
+    outline: none;
+    border: none;
+}
+
+.header__profile .header__cta{
+    padding: 1rem;
+    background-color: #26AE61;
+    border-radius: 8px;
+}
+
+.header__profile .header__cta a {
+    color: white;
+}
+
+.profile .profile__picture {
+    height: 30px;
+    width: 30px;
+    background: #ccc;
+    border-radius: 50%;
+    line-height: 33px;
+}

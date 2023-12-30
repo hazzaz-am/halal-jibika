@@ -1,0 +1,74 @@
+.main__banner__area {
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__banner__text {
+  flex-basis: 70%;
+}
+
+.bannerimg {
+  flex-basis: 30%;
+}
+.bannerimg img {
+  width: 100%;
+}
+
+.banner__heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.banner__heading span {
+  color: #26ae61;
+  background: rgba(38, 174, 97, 0.2);
+  border-radius: 4px;
+  padding: 0px 10px;
+}
+
+.jobs__keywords {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 26px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+}
+
+.jobs__keywords span a:first-child {
+  margin-left: 10px;
+}
+
+.jobs__keywords span a {
+  color: #27d773;
+  background: rgba(38, 174, 97, 0.15);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 5px 8px;
+  margin-right: 10px;
+}
+
+.explore__cta button {
+  background: #26ae61;
+  border: 2px solid #26ae61;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px 0 rgba(41, 128, 185, 0.2);
+  padding: 12px 30px;
+  font-size: 15px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.explore__cta button:hover {
+    background-color: transparent;
+    color: #26ae61;
+}
