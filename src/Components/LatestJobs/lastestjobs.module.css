@@ -108,16 +108,48 @@
   color: #444;
 }
 
-.job__cta .job__apply, .explore__btn {
-    background-color: transparent;
-    color: #26ae61;
+.job__cta .job__apply,
+.explore__btn {
+  background-color: transparent;
+  color: #26ae61;
 }
 
-.job__cta .job__apply:hover, .explore__btn:hover {
-    background-color:  #26ae61;
-    color: white
+.job__cta .job__apply:hover,
+.explore__btn:hover {
+  background-color: #26ae61;
+  color: white;
 }
 
 .explore__jobs {
-    text-align: center;
+  text-align: center;
+}
+
+@media (max-width: 986px) {
+  .jobs__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .jobs__container {
+    grid-template-columns: 1fr;
+  }
+
+  .jobs__category button {
+    background: #26ae61;
+    border: 2px solid #26ae61;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px 0 rgba(41, 128, 185, 0.2);
+    padding: 8px 24px;
+    font-size: 14px;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
 }

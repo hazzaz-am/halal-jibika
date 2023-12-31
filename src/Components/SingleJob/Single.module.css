@@ -89,3 +89,12 @@
   margin-right: 10px;
   border: 2px dotted #27d773;
 }
+
+
+@media (max-width: 986px) {
+  .single__job__card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}

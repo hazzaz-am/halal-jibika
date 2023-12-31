@@ -42,6 +42,7 @@ const SingleJob = ({ jobData }) => {
             {location}
           </span>
         </div>
+        
         <span>
           <a>{jobPosition}</a>
         </span>

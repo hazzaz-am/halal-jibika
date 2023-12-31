@@ -1,11 +1,29 @@
 .jobs__heading {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .jobs__header {
-    text-align: center;
-    margin-bottom: 25px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 .jobs__header p {
-    width: 800px;
+  width: 800px;
+  margin: auto;
+}
+
+@media (max-width: 986px) {
+  .jobs__header p {
+    width: 700px;
     margin: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .jobs__heading {
+    font-size: 22px;
+  }
+  .jobs__header p {
+    width: 350px;
+    margin: auto;
+    font-size: 12px;
+  }
 }

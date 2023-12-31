@@ -114,3 +114,18 @@ form p a {
   font-size: 24px;
   fill: black;
 }
+
+
+@media (max-width: 767.98px) {
+  .main__form {
+    width: 300px;
+  }
+
+  .form__header {
+    font-size: 26px;
+  }
+
+  form p {
+    font-size: 12px;
+  }
+}
