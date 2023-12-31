@@ -1,0 +1,123 @@
+.jobs__category {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.jobs__category button,
+.job__apply,
+.explore__btn {
+  background: #26ae61;
+  border: 2px solid #26ae61;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px 0 rgba(41, 128, 185, 0.2);
+  padding: 12px 30px;
+  font-size: 15px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.jobs__category button:hover {
+  background-color: transparent;
+  color: #26ae61;
+}
+
+.jobs__category button:nth-child(2) {
+  background: transparent;
+  color: #26ae61;
+}
+.jobs__category button:nth-child(2):hover {
+  background: #26ae61;
+  color: white;
+}
+
+.jobs__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.job__card {
+  background-color: #fff;
+  padding: 40px 20px;
+  border: 1px solid #eaeff5;
+  box-shadow: 0 4px 10px 0 rgba(41, 128, 185, 0.07);
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 30px;
+  transition: all 0.5s ease-in-out;
+  box-sizing: border-box;
+  flex-basis: 30%;
+}
+
+.job__card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.job__card__header .job__position a {
+  color: #27d773;
+  background: rgba(38, 174, 97, 0.15);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 5px 8px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.job__card__header .favourite__job {
+  background-color: #26ae61;
+  border-radius: 50%;
+  border: none;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.company__logo img {
+  width: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  padding: 5px;
+}
+
+.company__details {
+  margin: 15px 0;
+}
+
+.company__details .job__title {
+  font-size: 22px;
+  font-weight: 500;
+}
+.company__details .job__position {
+  font-size: 18px;
+  color: #8492af;
+  margin: 10px 0;
+}
+.company__details .job__description {
+  font-size: 13px;
+  color: #444;
+}
+
+.job__cta .job__apply, .explore__btn {
+    background-color: transparent;
+    color: #26ae61;
+}
+
+.job__cta .job__apply:hover, .explore__btn:hover {
+    background-color:  #26ae61;
+    color: white
+}
+
+.explore__jobs {
+    text-align: center;
+}

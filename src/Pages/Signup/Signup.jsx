@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Style from "./signup.module.css";
+import { FcGoogle } from "react-icons/fc";
+import { BsGithub } from "react-icons/bs";
 
 const Signup = () => {
   return (
@@ -27,7 +29,7 @@ const Signup = () => {
               />
             </div>
             <div className={Style.form__group}>
-                <label htmlFor="password">Password</label>
+              <label htmlFor="password">Password</label>
               <input
                 className={Style.form__control}
                 type="password"
@@ -36,7 +38,7 @@ const Signup = () => {
               />
             </div>
             <div className={Style.form__group}>
-                <label htmlFor="password">Confirm Password</label>
+              <label htmlFor="password">Confirm Password</label>
               <input
                 className={Style.form__control}
                 type="password"
@@ -51,6 +53,20 @@ const Signup = () => {
               Allready have an account ? <Link to="/signin">Signin Now</Link>
             </p>
           </form>
+          <h2 className={Style.alternative}>Or</h2>
+          <div className={Style.social__control}>
+            <div className={Style.social__group}>
+              <button>
+                <FcGoogle /> Signup With Google
+              </button>
+            </div>
+            <div className={Style.social__group}>
+              <button>
+                <BsGithub />
+                Signup with Github
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
