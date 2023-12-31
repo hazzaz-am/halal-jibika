@@ -1,0 +1,36 @@
+.far__from__home {
+    background: red;
+    border: 2px solid red;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px 0 rgba(41, 128, 185, 0.2);
+    padding: 12px 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.far__from__home:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.error__section {
+    padding: 60px 0;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.error__section img {
+    width: 100%;
+}
+
+.error__btn {
+    text-align: center;
+}

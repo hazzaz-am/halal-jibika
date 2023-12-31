@@ -1,0 +1,91 @@
+.single__job__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  margin-bottom: 30px;
+  padding: 40px 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 8px;
+}
+
+.company__logo {
+  flex-basis: 10%;
+}
+
+.company__logo img {
+  background: #26ae6143;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 1px dashed #26ae61;
+}
+
+.job__deyails {
+  flex-basis: 70%;
+  font-family: "Montserrat", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.job__deyails h3 {
+  font-size: 22px;
+}
+
+.requirement p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #707070;
+}
+
+.requirement span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 10px;
+  color: black;
+  font-size: 15px;
+}
+
+.browse__job {
+  font-family: "Montserrat", sans-serif;
+  flex-basis: 20%;
+  text-align: right;
+}
+
+.browse__job button {
+  background: #26ae61;
+  border: 2px solid #26ae61;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px 0 rgba(41, 128, 185, 0.2);
+  padding: 12px 30px;
+  font-size: 15px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.browse__job button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.job__deyails span a {
+  color: #27d773;
+  background: rgba(38, 174, 97, 0.15);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 5px 8px;
+  margin-right: 10px;
+  border: 2px dotted #27d773;
+}

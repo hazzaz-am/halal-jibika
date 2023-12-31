@@ -1,9 +1,10 @@
+import AllJobs from "../../Components/AllJobs/AllJobs";
 
 const Jobs = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <AllJobs/>
+        </>
     );
 };
 

@@ -1,0 +1,11 @@
+.jobs__heading {
+    margin-bottom: 10px;
+}
+.jobs__header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.jobs__header p {
+    width: 800px;
+    margin: auto;
+}
