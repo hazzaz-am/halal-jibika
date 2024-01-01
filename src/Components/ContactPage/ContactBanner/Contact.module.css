@@ -1,0 +1,15 @@
+.contact__banner__heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 90px;
+  color: rgba(17, 29, 59, 1);
+  /* max-width: 832px; */
+  text-align: center;
+}
+
+.contact__banner__image {
+  background: #19a46311 url("https://html.creativegigstf.com/khuj/khuj/images/bg/bg-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

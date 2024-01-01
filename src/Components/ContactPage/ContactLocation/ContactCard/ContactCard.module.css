@@ -1,0 +1,34 @@
+.connect__card__image {
+  background-color: white;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  transition: all 0.3s ease-in-out;
+  line-height: 100px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.connect__card__image img {
+  width: 40%;
+}
+
+.connect__card {
+  flex-basis: 30%;
+  text-align: center;
+  height: 246px;
+  padding: 30px 40px;
+  border-radius: 10px;
+  background: #26ae612a;
+  box-shadow: 5px 6px 60px 0px rgba(17, 29, 59, 0.04);
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.connect__card__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  color: #111d3b;
+}
