@@ -1,0 +1,35 @@
+.jobprocess__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jobprocess__topbar {
+  margin-bottom: 20px;
+}
+
+.dreamjob__heading {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+  color: rgba(17, 29, 59, 1);
+}
+
+.dreamjob__heading span {
+  color: #26ae61;
+}
+
+@media (max-width: 986px) {
+  .jobprocess__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .jobprocess__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

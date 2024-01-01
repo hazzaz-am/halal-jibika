@@ -1,0 +1,61 @@
+.category__card {
+  flex-basis: 20%;
+  text-align: center;
+  height: 246px;
+  padding: 30px 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 5px 6px 60px 0px rgba(17, 29, 59, 0.04);
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.category__card:hover {
+  background-color: #26ae61;
+}
+
+.category__card:hover .category__title {
+  color: white;
+}
+.category__card:hover .job__numbers {
+  color: white;
+}
+
+.category__card:hover .category__card__img {
+    background-color: #fff;
+}
+
+.category__card__img {
+  background-color: rgba(25, 164, 99, 0.2);
+
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  transition: all 0.3s ease-in-out;
+  line-height: 110px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.category__card__img img {
+  max-width: 100%;
+}
+
+.category__title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: rgba(17, 29, 59, 1);
+  transition: all 0.3s ease-in-out;
+  margin: 20px 0;
+}
+
+.job__numbers {
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  color: rgba(80, 80, 80, 1);
+  transition: all 0.3s ease-in-out;
+}
+

@@ -1,5 +1,5 @@
 import Style from "./error.module.css";
-import error from "../../../public/404.png";
+import error from "../../../public/404 error with person looking for.gif";
 import { Link } from "react-router-dom";
 
 const Error = () => {

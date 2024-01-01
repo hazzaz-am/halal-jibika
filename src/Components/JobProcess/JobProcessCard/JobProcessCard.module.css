@@ -1,0 +1,46 @@
+.process__card {
+  flex-basis: 30%;
+  text-align: center;
+  height: 246px;
+  padding: 30px 40px;
+  border-radius: 10px;
+  background: #26ae612a;
+  box-shadow: 5px 6px 60px 0px rgba(17, 29, 59, 0.04);
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.process__card__img {
+  background-color: white;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  transition: all 0.3s ease-in-out;
+  line-height: 110px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.process__card__img svg {
+  width: 100%;
+}
+
+.jobprocess__title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: rgba(17, 29, 59, 1);
+  transition: all 0.3s ease-in-out;
+  margin: 20px 0;
+}
+
+.jobprocess__title:hover {
+    color: #26ae61;
+}
+
+
+@media (max-width: 767.98px){
+  
+}

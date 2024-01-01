@@ -1,0 +1,58 @@
+.member__card {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.member__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+  color: #111d3b;
+  margin-top: 10px;
+}
+
+.member__position {
+  font-size: 16px;
+  line-height: 17px;
+  color: #505050;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.card__image img {
+  width: 100%;
+}
+
+.member__desc {
+  font-size: 13px;
+  color: #444;
+}
+
+.contact__cta {
+  width: 100%;
+  background-color: #26ae61;
+  color: white;
+  outline: none;
+  padding: 10px 0;
+  border: 2px solid #26ae61;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: "Fira Sans", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact__cta:hover {
+  background-color: transparent;
+  color: #111d3b;
+  border: 2px solid #26ae61;
+}
+
+.member__email {
+  margin: 5px 0;
+  font-size: 13px;
+  color: #444;
+}
+
+@media (max-width: 986px) {}
+@media (max-width: 767.98px) {
+}

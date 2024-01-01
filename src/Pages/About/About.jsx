@@ -1,10 +1,14 @@
-import Style from "./about.module.css"
+import AboutBanner from "../../Components/AboutBanner/AboutBanner";
+import JobProcess from "../../Components/JobProcess/JobProcess";
+import TeamMember from "../../Components/TeamMember/TeamMember";
 
 const About = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <AboutBanner/>
+            <TeamMember/>
+            <JobProcess/>
+        </>
     );
 };
 
