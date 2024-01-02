@@ -1,8 +1,18 @@
 import { NavLink } from "react-router-dom";
 import { BiSolidUser } from "react-icons/bi";
 import Style from "./header.module.css";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Header = () => {
+  const { signoutUser, user, loading } = useContext(AuthContext);
+
+  const handleSignOut = () => {
+    signoutUser()
+      .then((res) => console.log(res.user, "SIGNEDOUT"))
+      .catch((error) => console.log(error.message));
+  };
+
   return (
     <header>
       <nav className="container">
@@ -13,46 +23,49 @@ const Header = () => {
 
           <div className={Style.navbar}>
             <ul>
-              <li>
-                <NavLink to="/">Home</NavLink>
-              </li>
-              <li>
-                <NavLink to="/about">About</NavLink>
-              </li>
-              <li>
-                <NavLink to="/contact">Contact</NavLink>
-              </li>
-              <li>
-                <NavLink to="/jobs">Jobs</NavLink>
-              </li>
-              <li>
-                <NavLink to="/favourite">Favourite</NavLink>
-              </li>
-              <li>
-                <NavLink to="/appliedjobs">Applied Jobs</NavLink>
-              </li>
-              <li>
-                <NavLink to="/newjob">New Jobs</NavLink>
-              </li>
+              <NavLink to="/">Home</NavLink>
+
+              <NavLink to="/about">About</NavLink>
+
+              <NavLink to="/contact">Contact</NavLink>
+
+              <NavLink to="/jobs">Jobs</NavLink>
+
+              {user && <NavLink to="/favourite">Favourite</NavLink>}
+
+              {user && <NavLink to="/appliedjobs">Applied Jobs</NavLink>}
+
+              {user && <NavLink to="/newjob">New Jobs</NavLink>}
             </ul>
           </div>
 
           <div className={Style.header__profile}>
-            <button className={Style.header__cta}>
-              <NavLink to="/signin">Signin</NavLink>
-            </button>
-            <button className={Style.header__cta}>
-              <NavLink to="/signup">Signup</NavLink>
-            </button>
-            <button className={Style.header__cta}>
-              <NavLink to="/signout">Signout</NavLink>
-            </button>
-            <button className={Style.profile}>
-              <span>Hazzaz</span>
-              <span className={Style.profile__picture}>
-                <BiSolidUser />
-              </span>
-            </button>
+            {user ? (
+              <button
+                onClick={handleSignOut}
+                className={Style.header__cta}
+              >
+                <NavLink>Signout</NavLink>
+              </button>
+            ) : (
+              <>
+                <button className={Style.header__cta}>
+                  <NavLink to="/signin">Signin</NavLink>
+                </button>
+                <button className={Style.header__cta}>
+                  <NavLink to="/signup">Signup</NavLink>
+                </button>
+              </>
+            )}
+
+            {user && (
+              <button className={Style.profile}>
+                <span>{user.email}</span>
+                <span className={Style.profile__picture}>
+                  <BiSolidUser />
+                </span>
+              </button>
+            )}
           </div>
         </div>
       </nav>

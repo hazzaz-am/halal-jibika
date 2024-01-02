@@ -81,6 +81,14 @@ form p a {
 .alternative {
   text-align: center;
   margin: 20px 0;
+  font-size: 16px;
+}
+
+.error__message {
+  color: red;
+  margin-bottom: 15px;
+  margin-top: -15px;
+  text-align: left;
 }
 
 .social__group button {
@@ -113,6 +121,21 @@ form p a {
   margin-top: 2px;
   font-size: 24px;
   fill: black;
+}
+
+.deviderd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.deviderd hr {
+  flex-basis: 45%;
+}
+
+.deviderd .alternative {
+  flex-basis: 10%;
 }
 
 

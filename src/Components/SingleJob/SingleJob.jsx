@@ -6,6 +6,7 @@ import { FaLocationCrosshairs } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 
 const SingleJob = ({ jobData }) => {
+
   const {
     jobTitle,
     companyLogo,
@@ -15,6 +16,10 @@ const SingleJob = ({ jobData }) => {
     salary,
     location,
   } = jobData;
+
+
+
+
   return (
     <div className={Style.single__job__card}>
       <div className={Style.company__logo}>

@@ -8,7 +8,6 @@ import Jobs from "../Pages/Jobs/Jobs";
 import Favourite from "../Pages/Favourite/Favourite";
 import AppliedJobs from "../Pages/Applied Jobs/AppliedJobs";
 import AddNewJob from "../Pages/New Job/AddNewJob";
-import Signout from "../Pages/Signout/signout";
 import Signup from "../Pages/Signup/Signup";
 import PrivateRoute from "./PrivateRoute";
 import Signin from "../Pages/Signin/Signin";
@@ -54,10 +53,6 @@ export const router = createBrowserRouter([
             <AddNewJob />
           </PrivateRoute>
         ),
-      },
-      {
-        path: "/signout",
-        element: <Signout />,
       },
       {
         path: "/signup",

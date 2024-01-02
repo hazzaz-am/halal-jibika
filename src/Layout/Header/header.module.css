@@ -20,24 +20,18 @@ header {
     gap: 10px;
 }
 
-.navbar ul li {
-    cursor: pointer;
+.navbar ul a {
+    color: black;
     padding: 1rem;
     transition: all .4s liner;
 }
 
-.navbar ul li a {
-    color: black;
-}
-
-.navbar ul li:hover {
+.navbar ul a:hover {
     background-color: #26AE61;
     border-radius: 8px;
-}
-
-.navbar ul li:hover a{
     color: white;
 }
+
 
 .header__profile {
     display: flex;
