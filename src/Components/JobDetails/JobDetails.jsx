@@ -1,20 +1,16 @@
+import { useState } from "react";
 import "./JobDetail.css";
-import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { useLoaderData } from "react-router";
 
 const JobDetails = () => {
   const details = useLoaderData();
+  const [disable, setDisable] = useState(false)
+
   console.log(details);
 
   return (
     <section className="job__details">
       <div className="container">
-        <button
-          style={{ marginLeft: "20px" }}
-          className="btn"
-        >
-          <FaArrowAltCircleLeft /> Back
-        </button>
         <div
           style={{ paddingTop: "20px" }}
           className="section__title"
@@ -111,7 +107,7 @@ const JobDetails = () => {
               employer. We encourage candidates from all backgrounds to apply.
             </p>
             <div className="buttons">
-              <button>Apply Now</button>
+              <button onClick={() => setDisable(true)} disabled= {disable} className={`apply__btn ${disable}`}>Apply Now</button>
             </div>
           </div>
         </div>

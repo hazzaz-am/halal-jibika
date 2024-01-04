@@ -57,9 +57,12 @@
   font-family: "Montserrat", sans-serif;
   flex-basis: 20%;
   text-align: right;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.browse__job button {
+.job__deatils__btn {
   background: #26ae61;
   border: 2px solid #26ae61;
   color: #ffffff;
@@ -75,7 +78,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.browse__job button:hover {
+.job__deatils__btn:hover {
   background-color: transparent;
   color: black;
 }
@@ -89,6 +92,20 @@
   padding: 5px 8px;
   margin-right: 10px;
   border: 2px dotted #27d773;
+}
+
+
+.favourite__add__btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: right;
+}
+
+
+.favourite__add__btn svg {
+  font-size: 34px;
 }
 
 

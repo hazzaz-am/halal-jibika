@@ -4,8 +4,6 @@ import { useContext, useEffect } from "react";
 import Style from "../lastestjobs.module.css";
 import { AuthContext } from "./../../../Provider/AuthProvider";
 import { Link } from "react-router-dom";
-import { RiEdit2Line } from "react-icons/ri";
-import { TbHttpDelete } from "react-icons/tb";
 import Loading from "../../Loading/Loading";
 
 const LatestJobCard = ({ job }) => {

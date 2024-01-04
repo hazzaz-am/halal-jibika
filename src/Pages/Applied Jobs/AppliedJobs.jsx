@@ -2,9 +2,11 @@ import Style from "./AppliedJobs"
 
 const AppliedJobs = () => {
     return (
-        <div>
-            
-        </div>
+        <section>
+            <div className="container">
+                <h2 className="Your Applied Jobs"></h2>
+            </div>
+        </section>
     );
 };
 
