@@ -8,11 +8,11 @@ import { NavLink } from "react-router-dom";
 const SingleJob = ({ jobData }) => {
 
   const {
-    jobTitle,
-    companyLogo,
+    title,
+    logo,
     companyName,
-    jobPosition,
-    jobDescription,
+    position,
+    description,
     salary,
     location,
   } = jobData;
@@ -24,16 +24,16 @@ const SingleJob = ({ jobData }) => {
     <div className={Style.single__job__card}>
       <div className={Style.company__logo}>
         <img
-          src={companyLogo}
+          src={logo}
           alt=""
         />
       </div>
 
       <div className={Style.job__deyails}>
-        <h3>{jobTitle}</h3>
+        <h3>{title}</h3>
 
         <div className={Style.requirement}>
-          <p>{jobDescription}</p>
+          <p>{description}</p>
           <span>
             <HiBuildingOffice2 />
             {companyName}
@@ -49,7 +49,7 @@ const SingleJob = ({ jobData }) => {
         </div>
         
         <span>
-          <a>{jobPosition}</a>
+          <a>{position}</a>
         </span>
       </div>
 

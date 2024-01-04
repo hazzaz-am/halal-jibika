@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Header = () => {
-  const { signoutUser, user, loading } = useContext(AuthContext);
+  const { signoutUser, user } = useContext(AuthContext);
 
   const handleSignOut = () => {
     signoutUser()
@@ -30,8 +30,7 @@ const Header = () => {
               <NavLink to="/contact">Contact</NavLink>
 
               <NavLink to="/jobs">Jobs</NavLink>
-
-              {user && <NavLink to="/favourite">Favourite</NavLink>}
+              <NavLink to="/favourite">Favourite</NavLink>
 
               {user && <NavLink to="/appliedjobs">Applied Jobs</NavLink>}
 
@@ -60,9 +59,9 @@ const Header = () => {
 
             {user && (
               <button className={Style.profile}>
-                <span>{user.email}</span>
+                <span>{user?.displayName}</span>
                 <span className={Style.profile__picture}>
-                  <BiSolidUser />
+                <img src={user ? user?.photoURL : <BiSolidUser />} alt="profile" />               
                 </span>
               </button>
             )}

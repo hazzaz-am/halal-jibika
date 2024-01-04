@@ -10,6 +10,8 @@
   margin: auto;
 }
 
+
+
 @media (max-width: 986px) {
   .jobs__header p {
     width: 700px;
@@ -27,4 +29,3 @@
     font-size: 12px;
   }
 }
-

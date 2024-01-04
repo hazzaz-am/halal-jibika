@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import Style from "./signup.module.css";
 import { FcGoogle } from "react-icons/fc";
@@ -6,13 +7,11 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
 
-
-
 const Signup = () => {
   const { createUser, googleSignin, githubSignin } = useContext(AuthContext);
   const [error, setError] = useState("");
   const githubProvider = new GithubAuthProvider();
-const googleProvider = new GoogleAuthProvider();
+  const googleProvider = new GoogleAuthProvider();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -29,7 +28,7 @@ const googleProvider = new GoogleAuthProvider();
     } else {
       createUser(email, password)
         .then((res) => {
-          console.log(res.user);
+          // console.log(res.user);
           setError("");
           form.reset();
         })
@@ -38,27 +37,27 @@ const googleProvider = new GoogleAuthProvider();
   };
 
   const handleGoogleSignin = (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
     googleSignin(googleProvider)
-    .then((res) => {
-      const user = res.user;
-      console.log(user)
-      console.log("LoggedInWithGoogle")
-    })
-    .catch((error) => console.error(error.message))
-  }
+      .then((res) => {
+        const user = res.user;
+        // console.log(user);
+        // console.log("LoggedInWithGoogle");
+      })
+      .catch((error) => console.error(error.message));
+  };
 
   const handleGithubSignin = (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
     githubSignin(githubProvider)
-    .then((res) => {
-      console.log(res.user)
-      console.log("LOGGEDINWITHGITHUB")
-    })
-    .catch((error) => console.error(error.message))
-  }
+      .then((res) => {
+        // console.log(res.user);
+        // console.log("LOGGEDINWITHGITHUB");
+      })
+      .catch((error) => console.error(error.message));
+  };
 
   return (
     <section>
@@ -112,9 +111,9 @@ const googleProvider = new GoogleAuthProvider();
           </form>
 
           <div className={Style.deviderd}>
-          <hr />
-          <h2 className={Style.alternative}>Or</h2>
-          <hr />
+            <hr />
+            <h2 className={Style.alternative}>Or</h2>
+            <hr />
           </div>
 
           <div className={Style.social__control}>

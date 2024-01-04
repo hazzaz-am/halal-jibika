@@ -1,0 +1,61 @@
+.job__container {
+  width: 800px;
+  margin: auto;
+}
+
+.button__for__newJob {
+  text-align: right;
+}
+
+.add__new__job {
+  background: #26ae61;
+  border: 2px solid #26ae61;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px 0 rgba(41, 128, 185, 0.2);
+  padding: 12px 30px;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+
+    width: 330px;
+    margin-top: 60px;
+
+}
+
+
+
+.add__new__job:hover {
+    background-color: transparent;
+    color: #26ae61;
+}
+
+.form__control {
+  margin-bottom: 10px;
+}
+
+.form__control label {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* .form__control input {
+  width: 50%;
+} */
+
+.job__container form{
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    border: 2px solid #26ae6196;
+    padding: 50px;
+}
+
+.addnewjob__heading {
+  margin-bottom: 20px;
+  text-align: center;
+}

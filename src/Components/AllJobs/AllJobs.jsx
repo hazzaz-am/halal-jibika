@@ -9,7 +9,7 @@ const AllJobs = () => {
   useEffect(() => {
     try {
       const alljobs = async () => {
-        const res = await fetch("../../../public/jobs.json");
+        const res = await fetch("http://localhost:9000/jobs");
         const jobsData = await res.json();
         setJobs(jobsData);
       };
@@ -18,7 +18,8 @@ const AllJobs = () => {
       console.error(error.message);
     }
   }, []);
-  console.log(jobs);
+
+
 
   return (
     <section>

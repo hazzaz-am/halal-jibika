@@ -1,10 +1,12 @@
 import Style from "./lastestjobs.module.css";
-import company from "../../../public/company_logo_3.png";
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import LatestJobCard from "./LatestJobCard/LatestJobCard";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import Loading from "../Loading/Loading";
 
 const LatestJobs = () => {
-  const [favourite, setFavourite] = useState(false);
+  const { jobs, loading } = useContext(AuthContext);
 
   return (
     <section>
@@ -15,107 +17,17 @@ const LatestJobs = () => {
         </div>
 
         <div className={Style.jobs__container}>
-          <div className={Style.job__card}>
-            <div className={Style.job__card__header}>
-              <span className={Style.job__position}>
-                <a href="">Senior Developer</a>
-              </span>
-              <button
-                onClick={() => setFavourite(!favourite)}
-                className={Style.favourite__job}
-              >
-                {favourite ? "❤️" : "🤍"}
-              </button>
-            </div>
+          {/* {error && <h1 className={Style.errorHandle}>Something Went Wrong</h1>} */}
+          {loading && <Loading />}
 
-            <div className={Style.company__logo}>
-              <img
-                src={company}
-                alt=""
+          {jobs
+            .map((job) => (
+              <LatestJobCard
+                key={job.id}
+                job={job}
               />
-            </div>
-
-            <div className={Style.company__details}>
-              <h5 className={Style.job__title}>Senior Officer</h5>
-              <p className={Style.job__position}>Microsoft</p>
-              <p className={Style.job__description}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-                cumque dolorem? Non optio illum recusandae?
-              </p>
-            </div>
-
-            <div className={Style.job__cta}>
-              <button className={Style.job__apply}>Apply Now</button>
-            </div>
-          </div>
-
-          <div className={Style.job__card}>
-            <div className={Style.job__card__header}>
-              <span className={Style.job__position}>
-                <a href="">Junior Developer</a>
-              </span>
-              <button
-                onClick={() => setFavourite(!favourite)}
-                className={Style.favourite__job}
-              >
-                {favourite ? "❤️" : "🤍"}
-              </button>
-            </div>
-
-            <div className={Style.company__logo}>
-              <img
-                src={company}
-                alt=""
-              />
-            </div>
-
-            <div className={Style.company__details}>
-              <h5 className={Style.job__title}>Senior Officer</h5>
-              <p className={Style.job__position}>Microsoft</p>
-              <p className={Style.job__description}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-                cumque dolorem? Non optio illum recusandae?
-              </p>
-            </div>
-
-            <div className={Style.job__cta}>
-              <button className={Style.job__apply}>Apply Now</button>
-            </div>
-          </div>
-
-          <div className={Style.job__card}>
-            <div className={Style.job__card__header}>
-              <span className={Style.job__position}>
-                <a href="">Mid Level Developer</a>
-              </span>
-              <button
-                onClick={() => setFavourite(!favourite)}
-                className={Style.favourite__job}
-              >
-                {favourite ? "❤️" : "🤍"}
-              </button>
-            </div>
-
-            <div className={Style.company__logo}>
-              <img
-                src={company}
-                alt=""
-              />
-            </div>
-
-            <div className={Style.company__details}>
-              <h5 className={Style.job__title}>Senior Officer</h5>
-              <p className={Style.job__position}>Microsoft</p>
-              <p className={Style.job__description}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-                cumque dolorem? Non optio illum recusandae?
-              </p>
-            </div>
-
-            <div className={Style.job__cta}>
-              <button className={Style.job__apply}>Apply Now</button>
-            </div>
-          </div>
+            ))
+            .slice(-5)}
         </div>
 
         <div className={Style.explore__jobs}>

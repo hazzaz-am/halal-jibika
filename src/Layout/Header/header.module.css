@@ -74,3 +74,8 @@ header {
     border-radius: 50%;
     line-height: 33px;
 }
+
+.profile__picture img  {
+    width: 100%;
+    border-radius: 50px;
+}
