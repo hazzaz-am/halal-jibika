@@ -47,7 +47,7 @@ const Favourite = () => {
               </div>
 
               <div className={Style.job__cta}>
-                <Link>
+                <Link to={`/details/${job.id}`}>
                   <button className={Style.job__apply}>Show Details</button>
                 </Link>
               </div>

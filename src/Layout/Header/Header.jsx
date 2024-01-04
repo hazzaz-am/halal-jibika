@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { BiSolidUser } from "react-icons/bi";
 import Style from "./header.module.css";
 import { useContext } from "react";
@@ -18,7 +18,9 @@ const Header = () => {
       <nav className="container">
         <div className={Style.navbar__container}>
           <div className={Style.header__logo}>
-            <h1 className={Style.heading}>HALAL JIBIKA</h1>
+            <Link to="/">
+              <h1 className={Style.heading}>HALAL JIBIKA</h1>
+            </Link>
           </div>
 
           <div className={Style.navbar}>
@@ -61,7 +63,10 @@ const Header = () => {
               <button className={Style.profile}>
                 <span>{user?.displayName}</span>
                 <span className={Style.profile__picture}>
-                <img src={user ? user?.photoURL : <BiSolidUser />} alt="profile" />               
+                  <img
+                    src={user ? user?.photoURL : <BiSolidUser />}
+                    alt="profile"
+                  />
                 </span>
               </button>
             )}

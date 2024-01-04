@@ -7,7 +7,8 @@
 
 .jobs__category button,
 .job__apply,
-.explore__btn {
+.explore__btn,
+.job__apply__btn {
   background: #26ae61;
   border: 2px solid #26ae61;
   color: #ffffff;
@@ -173,6 +174,7 @@
   margin-bottom: 30px;
   text-align: center;
 }
+
 
 
 

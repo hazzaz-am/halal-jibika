@@ -11,7 +11,6 @@ const LatestJobCard = ({ job }) => {
 
   return (
     <div className={Style.job__card}>
-      {/* {error && <h1 className={Style.errorHandle}>Something Went Wrong</h1>} */}
       {loading && <Loading />}
       <div className={Style.job__card__header}>
         <span className={Style.job__position}>

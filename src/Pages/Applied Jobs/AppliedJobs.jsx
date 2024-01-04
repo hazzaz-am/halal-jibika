@@ -40,7 +40,7 @@ const AppliedJobs = () => {
 
               <div className={Style.job__cta}>
                 <Link>
-                  <button disabled className={Style.job__apply}>Applied</button>
+                  <button disabled className={Style.job__apply__btn}>Applied</button>
                 </Link>
               </div>
             </div>
