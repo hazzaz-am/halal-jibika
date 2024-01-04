@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useContext } from "react";
 import "./JobDetail.css";
 import { useLoaderData } from "react-router";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const JobDetails = () => {
   const details = useLoaderData();
-  const [disable, setDisable] = useState(false)
+  // const [disable, setDisable] = useState(false);
+  const { addToApply, isJobApplied } = useContext(AuthContext);
 
   console.log(details);
 
@@ -107,7 +109,13 @@ const JobDetails = () => {
               employer. We encourage candidates from all backgrounds to apply.
             </p>
             <div className="buttons">
-              <button onClick={() => setDisable(true)} disabled= {disable} className={`apply__btn ${disable}`}>Apply Now</button>
+              <button
+                onClick={() => addToApply(details)}
+                // disabled={disable}
+                className="apply__btn"
+              >
+                {isJobApplied(details.id) ? "Applied" :  "Apply Now"}
+              </button>
             </div>
           </div>
         </div>

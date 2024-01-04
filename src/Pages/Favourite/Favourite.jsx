@@ -8,10 +8,6 @@ const Favourite = () => {
   const { favourite, addToFavourite, loading, isJobFavorite } =
     useContext(AuthContext);
 
-    // useEffect(() => {
-    //   localStorage.setItem("favourite", favourite)
-    // }, [favourite])
-
     
   return (
     <section>
@@ -54,10 +50,6 @@ const Favourite = () => {
                 <Link>
                   <button className={Style.job__apply}>Show Details</button>
                 </Link>
-
-                {/* <Link className={Style.delete__job}>
-                  <TbHttpDelete color="red" />
-                </Link> */}
               </div>
             </div>
           ))}
